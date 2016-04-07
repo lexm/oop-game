@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lexm/oop-game/issues"
   },
-  "homepage": "https://github.com/lexm/oop-game#readme"
+  "homepage": "https://github.com/lexm/oop-game#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
 }
