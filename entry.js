@@ -4,7 +4,7 @@ require('./lib/baseObj');
 var hero = require('./lib/hero');
 var Barbarian = hero.Barbarian;
 var Wizard = hero.Wizard;
-require('./lib/board');
+var board = require('./lib/board');
 
 var prompt = require('prompt');
 var playerSchema = {
@@ -25,6 +25,7 @@ var playerSchema = {
 };
 
 var player;
+var currentRoom = board.startRoom;
 
 prompt.start();
 prompt.get(playerSchema, function(err, result) {
@@ -40,3 +41,5 @@ prompt.get(playerSchema, function(err, result) {
     console.log('bad input', result);
   }
 });
+
+currentRoom.look();
